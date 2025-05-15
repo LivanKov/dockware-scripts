@@ -1,5 +1,5 @@
 #!/bin/bash
-source config.sh
+. "$(dirname "${BASH_SOURCE[0]}")/config.sh"
 
 if ! command -v sshpass &> /dev/null; then
     echo "sshpass is required but not installed." >&2
